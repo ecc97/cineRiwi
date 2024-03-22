@@ -19,39 +19,88 @@
   </head>
   <body>
     <header>
-      <h1>Cine Riwi</h1>
-      
+      <h1>Cine</h1>
+      <nav>
+        <a href="#estrenos">
+          <i class="bi bi-film"></i>
+          <span>Estrenos</span>
+        </a>
+        <a href="">
+          <i class="bi bi-camera-reels-fill"></i>
+          <span>Cartelera</span>
+        </a>
+        <a href="">
+          <i class="bi bi-telephone-forward-fill"></i>
+          <span>Contacto</span>
+        </a>
+      </nav>
     </header>
     <main>
-      <section>
-        <figure>
-          <img src="https://pics.filmaffinity.com/iron_man-108960873-large.jpg" alt="iron-man" />
-          <figcaption>IronMan</figcaption>
-        </figure>
-      </section>
-      <section>
-        <figure>
-          <img src="https://pics.filmaffinity.com/the_dark_knight-102763119-large.jpg" alt="batman-dark-night" />
-          <figcaption>Batman El Caballero de la noche</figcaption>
-        </figure>
-      </section>
-      <section>
-        <figure>
-          <img src="https://img.ecartelera.com/noticias/fotos/70100/70190/1.jpg" alt="snwh" />
-          <figcaption>Spiderman sin camino a casa</figcaption>
-        </figure>
-      </section>
-      <section>
-        <figure>
-          <img src="https://pics.filmaffinity.com/avengers_infinity_war-181539353-large.jpg" alt="aiw" />
-          <figcaption>Avengers Infinity War</figcaption>
-        </figure>
-      </section>
-      <section>
-        <figure>
+      <section id="estrenos" class="estrenos">
+        <h1>Estrenos</h1>
+        <article class="estreno-item" >
+          <img src="https://i.redd.it/wfnbn3n5i0t91.jpg" alt="d&w">
           <img src="https://pics.filmaffinity.com/guardians_of_the_galaxy_vol_3-466272381-large.jpg" alt="gog3">
-          <figcaption>Guardianes de la Galaxia 3</figcaption>
-        </figure>
+          <img src="https://img.ecartelera.com/noticias/fotos/70100/70190/1.jpg" alt="snwh">
+        </article>
+      </section>
+      
+      <section id="cartelera" class="cartelera">
+        <h2>Cartelera</h2>
+        <article class="contenido-cartelera">
+          <figure class="pelicula">
+            <img src="https://pics.filmaffinity.com/iron_man-108960873-large.jpg" alt="iron-man" />
+            <h3>IronMan</h3>
+            <figcaption>Descripción</figcaption>
+
+          </figure>
+        
+          <figure class="pelicula">
+            <img src="https://pics.filmaffinity.com/the_dark_knight-102763119-large.jpg" alt="batman-dark-night" />
+            <figcaption>Batman El Caballero de la noche</figcaption>
+          </figure>
+        
+          <figure class="pelicula">
+            <img src="https://pics.filmaffinity.com/spider_man_2-876729560-large.jpg" alt="spiderman2"/>
+            <figcaption>Spiderman 2</figcaption>
+          </figure>
+        
+          <figure class="pelicula">
+            <img src="https://pics.filmaffinity.com/avengers_infinity_war-181539353-large.jpg" alt="aiw" />
+            <figcaption>Avengers Infinity War</figcaption>
+          </figure>
+        
+          <figure class="pelicula">
+            <img src="https://pics.filmaffinity.com/zack_snyder_s_justice_league-554207771-large.jpg" alt="snyder-cut">
+            <figcaption>Justice League - Liga de la justicia</figcaption>
+          </figure>
+
+        
+          <figure class="pelicula">
+            <img src="https://pics.filmaffinity.com/captain_america_the_winter_soldier-333149071-large.jpg" alt="c&ws" />
+            <figcaption>Capitán América y el soldado del invierno</figcaption>
+          </figure>
+        
+          <figure class="pelicula">
+            <img src="https://pics.filmaffinity.com/man_of_steel_superman-919390391-large.jpg" alt="mos" />
+            <figcaption>El Hombre de Acero</figcaption>
+          </figure>
+        
+          <figure class="pelicula">
+            <img src="https://pics.filmaffinity.com/megamind-871453660-large.jpg" alt="mgm"/>
+            <figcaption>MegaMente</figcaption>
+          </figure>
+        
+          <figure class="pelicula">
+            <img src="https://pics.filmaffinity.com/logan-528968427-mmed.jpg" alt="logan" />
+            <figcaption>Logan</figcaption>
+          </figure>
+        
+          <figure class="pelicula">
+            <img src="https://pics.filmaffinity.com/the_incredibles-939387273-large.jpg" alt="los-increibles">
+            <figcaption>Los Increíbles</figcaption>
+          </figure>
+        </article>
       </section>
     </main>
     <footer></footer>
