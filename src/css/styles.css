@@ -2,9 +2,10 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 :root {
-  --azul-oscuro: #6f99ff;
+  --azul-cielo: #6f99ff;
   --blanco: #ffffff;
-  --border-blue: #141c52;
+  --color-rojizo: #aa184b;
+  --azul-oscuro: #141c52;
 }
 
 * {
@@ -14,13 +15,29 @@
   font-family: "Truculenta", sans-serif;
 }
 
+body {
+  background-color: var(--azul-oscuro);
+}
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--azul-oscuro); 
+  background-color: var(--azul-cielo); 
   color: var(--blanco);
   padding: 20px 15px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2{
+  font-size: 24px;
+}
+
+h3{
+  font-size: 18px;
 }
 
 nav {
@@ -34,41 +51,145 @@ nav a {
   text-decoration: none;
 }
 
+main {
+  padding-top: 50px;
+}
+
 .estrenos{
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: var(--blanco);
   padding: 50px 150px;
+  position: relative;
+}
+
+.estrenos h2 {
+  position: absolute;
+  top: 0;
+  left: 8%;
+}
+
+.estreno-item {
+  width: 33.33%;
+  min-width: 520px;
 }
 
 .estreno-item >img {
-  width: 33.14%;
-  height: 730px;  
+  width: 100%;
+  height: 730px;
+}
+
+.estreno-item > img:hover{
+  object-fit: cover;
+  transition: .3s;  
 }
 
 .cartelera {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 0 2px;
-}
-
-.contenido-cartelera {
-  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+  padding: 52px 2px;
+  position: relative;
+}
+
+.cartelera h2 {
+  position: absolute;
+  top: 0;
+  color: var(--blanco);
 }
 
 .pelicula {
-  padding: 2px;
-  border: 2px solid var(--border-blue);
+  width: 350px;
+  height: 533px;
+  background-color: var(--blanco);
+  border: 2px solid var(--azul-cielo);
+  border-radius: 10px;
+}
+
+.pelicula h3, .pelicula figcaption {
+  margin-left: 8px;
+}
+
+.pelicula:hover {
+  transform: scale(103%);
+  transition: .3s;
+}
+
+.boton-comprar {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  background-color: var(--color-rojizo);
+  color: var(--blanco);
+  text-decoration: none;
   border-radius: 10px;
 }
 
 .pelicula img {
-  width: 350px;
+  width: 100%;
   height: 350px;
   border-radius: 10px;
 }
 
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background-color: var(--color-rojizo);
+  color: var(--blanco);
+}
+
+.formulario {
+  width: 80%;
+  max-width: 720px;
+}
+
+.contacto h2, .campo {
+  margin-bottom: 15px;
+}
+
+.campo input, .campo textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 22px;
+  border: 1px solid var(--azul-oscuro);
+  border-radius: 8px;
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  outline: 1px solid var(--azul-oscuro);
+}
+
+.formulario button {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--azul-cielo);
+  color: var(--blanco);
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: .9;
+}
+
+footer {
+  background-color: var(--azul-cielo);
+  color: var(--blanco);
+  padding: 35px;
+}
+
+.contenido-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.contenido-footer > p {
+  font-size: 25px;
+}
